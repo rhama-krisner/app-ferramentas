@@ -1,0 +1,44 @@
+* {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.box {
+    color: black;
+    text-align: center;
+    flex-basis: 190px;
+    padding: 7px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+
+    border-radius: 30px;
+    background: #e6e6e6;
+    box-shadow:  20px 20px 60px #c4c4c4,
+    -20px -20px 60px #ffffff;
+    /* adicionando a animação */
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:active {
+    /* reduzindo o tamanho do box quando pressionado */
+    transform: scale(0.9);
+    /* reduzindo a sombra quando pressionado */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
